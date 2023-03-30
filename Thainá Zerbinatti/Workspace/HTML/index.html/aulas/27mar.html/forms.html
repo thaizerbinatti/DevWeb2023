@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--Criar formulário-->
+    <form action="#">
+        <!--tag para entrada de informações-->
+
+        <!--campo nome-->
+        <label for="" >Nome</label>
+        <input type="text" required="required"><br>
+
+        <!--campo idade-->
+        <label for="" >Idade</label>
+        <input type="number"><br>
+
+        <!--campo nota-->
+        <label for="" >Nota</label>
+        <input type="number"><br>
+        <br>
+
+        <!--input para aprovado, reprovado e recuperação-->
+        <label for="">Status</label> <br>
+
+        <!-- Aprovado -->
+        <input type="radio" name="status" id="Aprov">
+        <label for="Aprov">Aprovado</label> <br>
+
+        <!-- Reprovado -->
+        <input type="radio" name="status" id="Repro">
+        <label for="Repro">Reprovado</label> <br>
+
+        <!-- Recuperação -->
+        <input type="radio" name="status" id="Rec">
+        <label for="Rec">Recuperação</label><br>
+        <br>
+
+        <!--Checkbox para Exercicios Concluidos-->
+        <label for="" >Exercicios Concluidos</label><br>
+        <input type="checkbox">
+        <label for="" >Exercicio 1</label> <br>
+
+        <input type="checkbox">
+        <label for="" >Exercicio 2</label> <br>
+
+        <input type="checkbox">
+        <label for="" >Exercicio 3</label> <br>
+
+        <input type="checkbox">
+        <label for="" >Exercicio 4</label> <br>
+
+        <input type="checkbox">
+        <label for="" >Exercicio 5</label> <br>
+        <br>
+
+        <!-- Você gostou do curso -->
+        <label for="" >Você gostou do curso?</label> <br>
+        <label for="" >Sim</label>
+        <input type="range">
+        <label for="" >Não</label><br>
+        <br>
+        
+        <!-- Listas de Instituições -->
+        <label for="Lista1">Lista de Instituições</label>
+        <select name="" id="Lista1">
+            <option value="">IOS</option>
+            <option value="">PROA</option>
+            <option value="">Generation</option>
+            <option value="">Recode</option>
+        </select><br>
+        <br>
+
+        <!--Lista de comida 5-->
+        <label for="">Lista de Comida</label>
+        <input type="text" list="comida">
+        <datalist id="comida">
+            <option value="Figado"></option>
+            <option value="Arroz"></option>
+            <option value="Fogazza"></option>
+            <option value="Feijão"></option>
+            <option value="Abacate"></option>
+        </datalist> <br>
+        <br>
+
+        <!--Campo de texto para chorar-->
+        <label for="">Local de lamentações</label><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="deixe seu texto aqui"></textarea>
+
+        <br>
+        <!--tag botão para enviar formulário-->
+        <input type="submit" value="enviar">
+
+    </form>
+    
+</body>
+</html>

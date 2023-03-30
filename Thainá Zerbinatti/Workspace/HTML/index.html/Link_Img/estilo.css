@@ -1,0 +1,27 @@
+p{
+	color: rgb(0, 5, 0);
+	font-size: 1.2em;
+	font-family: 'arial', Courier, monospace;
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #99c2ff;
+}
+h2{ 
+	font-family: arial;
+	color: #ffe46d;
+	text-align: center;
+	background-color: #065f0b;
+}
+h4{ 
+	font-family: arial;
+	color: #020202;
+	background-color: #ffffff;
+}
+small{
+	color: blue;
+	font-size: 0.5em;
+	text-align: center;
+	font-family: 'arial', Courier, monospace;
+}
