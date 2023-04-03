@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet and Love</title>
+</head>
+
+<header>
+    <h1>Sweet and Love&reg;</h1>
+    <h4>Pesquisa Clientes 2023</h4>
+</header> <br>
+
+<body>
+    <main>
+        <!--Formulário clientes da loja-->
+        <form method="post" id="fContato" action="thatazerb@gmail.com">
+
+            <fieldset>
+                <legend>Identificação</legend><br>
+                <!--Campo nome-->
+                <label for="">Nome</label>
+                <input type="text" required="required"><br><br>
+
+                <!--Campo idade-->
+                <label for="">Idade</label>
+                <input type="number" required="required"><br><br>
+
+                <!--Campo email-->
+                <label for="">E-mail</label>
+                <input type="text" required="required"><br>
+                <br>
+            </fieldset> <br>
+
+            <fieldset>
+                <legend>Sua opinião:</legend><br>
+
+                <!--Questionário sobre indicação-->
+                <label for="">Você indicaria nossa loja para um amigo(a)?</label> <br>
+
+                <input type="radio" name="status" id="Sim">
+                <label for="Sim">Sim</label> <br>
+
+                <input type="radio" name="status" id="Não">
+                <label for="Não">Não</label> <br> <br>
+
+                <!--Checkbox o que mais gostou-->
+                <label for="">O que mais gostou da nossa loja?</label><br>
+                <input type="checkbox">
+                <label for="">Doces</label> <br>
+
+                <input type="checkbox">
+                <label for="">Ambiente</label> <br>
+
+                <input type="checkbox">
+                <label for="">Entrega/Delivery</label> <br>
+
+                <input type="checkbox">
+                <label for="">Atendimento</label> <br>
+
+                <input type="checkbox">
+                <label for="">Valores</label> <br>
+                <br>
+
+                <!--Item da última compra-->
+                <label for="">Qual sobremesa ou salgado você experimentou na última compra?</label>
+                <input type="text" list="item">
+                <datalist id="item">
+                    <option value="Bolos"></option>
+                    <option value="Café"></option>
+                    <option value="Cappucinos"></option>
+                    <option value="Croissant"></option>
+                    <option value="Cookies"></option>
+                    <option value="Doces"></option>
+                    <option value="Empadas"></option>
+                    <option value="Salgados"></option>
+                    <option value="Sucos"></option>
+                    <option value="Tortas"></option>
+                </datalist> <br> <br>
+
+                <!-- Listas de lojas -->
+                <label for="ListaLojas">Em qual das nossas lojas você foi atendido?</label>
+                <select name="" id="ListaLojas">
+                    <option value="">Aclimação</option>
+                    <option value="">Liberdade</option>
+                    <option value="">Tatuapé</option>
+                    <option value="">São Joaquim</option>
+                </select><br>
+                <br>
+            </fieldset> <br>
+
+            <!--Botão para enviar formulário-->
+            <p>Obrigada por contribuir com nossa pesquisa!</p>
+            <input type="submit" value="enviar">
+        </form>
+    </main>
+</body> <br>
+
+<footer>
+    <small>Copyright&copy; | Sweet and Love</small>
+</footer>
+
+</html>

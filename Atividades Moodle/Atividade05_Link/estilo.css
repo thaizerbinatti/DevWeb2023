@@ -1,0 +1,29 @@
+h1{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	background-color: #99c2ff;
+}
+h2{ 
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #ffe46d;
+	text-align: center;
+	background-color: #065f0b;
+}
+small{
+	color: rgb(0, 0, 0);
+	font-size: 0.7em;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+p{ 
+	font-family: Calibri;
+	color: #000000;
+}
+ul{ 
+	font-family: Calibri;
+	color: #000000;
+}
+h4{ 
+	font-family: Calibri;
+	color: #000000;
+}
