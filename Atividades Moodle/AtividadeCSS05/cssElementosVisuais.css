@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+    background-color: #c6b691;
+    color: #black;
+}
+
+header {
+    background-color: #d29c42;
+    color: #black;
+    text-align: center;
+    text-shadow: 3px 3px 5px #black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    alt: "brigadeiro-de-milho.jpg";
+    height: 240px;
+    width: 320px;
+}
+
+figure {
+    width: 320px;
+    padding: 5px;
+    border: 2px solid #000000;
+}
+
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b29061;
+    line-height: 150%;
+}
+
+img {
+    alt: "pipocadoce.jpg";
+    height: 180px;
+    width: 320px;
+}
+
+img {
+    alt: "macadoamor.jpg";
+    height: 200px;
+    width: 320px;
+}
