@@ -1,0 +1,49 @@
+@charset "utf-8";
+* {
+ margin: 0;
+ padding: 0;
+}
+
+header {
+    text-align: center;
+    background-image: url('capatezza.jpg');
+}
+
+#nomeuni {
+    padding: 25px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+article {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px 40px;
+}
+
+.imagens {
+    width: 200px;
+    height: 200px;
+    margin: 0 15px 0 0;
+}
+
+section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px 40px;
+}
+
+.titulos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #a39288;
+    padding: 10px 10px 10px 30px;
+}
+
+figure {
+    width: 320px;
+    padding: 5px;
+    border: 1px solid #000000;
+    margin: 25px;
+}
+
+p {
+    text-align: justify;
+}
