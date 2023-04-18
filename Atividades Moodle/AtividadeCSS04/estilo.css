@@ -1,0 +1,50 @@
+* {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+ 
+}
+
+main {
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secao {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+#titulo1 {
+    color: #272d4d;
+}
+
+#titulo2 {
+    color: #b83564;
+}
+
+#titulo3 {
+    color: #ff6a5a;
+}
+
+#titulo4 {
+    color: #ffb350;
+}
+
+#titulo5 {
+    color: #83b8aa;
+}
+
+#titulo6 {
+    color: #99822d;
+}
+
+.imagens {
+    height: 250px;
+    width: 250px;
+}
