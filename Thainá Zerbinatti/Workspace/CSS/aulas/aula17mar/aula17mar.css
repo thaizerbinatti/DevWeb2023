@@ -1,0 +1,46 @@
+.img1 {
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+
+.img2 {
+    float: right;
+    height: 200px;
+    width: 300px;
+} 
+
+div {
+    height: 400px;
+    border: 1px solid #000;
+}
+
+.img3 {
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+
+.secaoimg2 {
+    float:left;
+}
+
+.paragrafo {
+    clear: left;
+}
+
+#section1 {
+    width: 300px;
+    height: 200px;
+    padding: 50px;
+    border:1px solid #15ff00;
+    box-sizing: border-box;
+}
+
+#section2 {
+    width: 300px;
+    height: 200px;
+    padding: 50px;
+    border:1px solid #ff00dd;
+    box-sizing: border-box;
+}
