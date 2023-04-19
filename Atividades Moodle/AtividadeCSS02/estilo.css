@@ -4,8 +4,9 @@ body {
     font-weight: 700;
     background-color: #b3e9f3;
 }
-.tituloprincipal {
+
+h3 {
+    text-shadow: 3px 3px 3px #48789f;
     background-color: #6590d1;
     color:black
-    text-shadow: 3xp 3xp 3xp #48789f;
 }
