@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+* {
+    background-color: #c8cfc9;
+    color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+}
+
+#logotipo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: green;
+    color: #7dfd92;
+    text-shadow: 2px 2px 3px black;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+article {
+    padding: 0px 15px 0px 15px;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+}
+
+.container div {
+    border: 1px #000 solid;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+}
+
+.item1 {
+    flex: 1;
+    order: 1;
+ }
+    
+.item2 {
+    flex: 2;
+    order: 2;
+    align-self:self-start;
+}
+    
+.item3 {
+    flex: 1;
+    order: 3;
+}
+
+.item4 {
+    flex: 2;
+    order: 4;
+}
