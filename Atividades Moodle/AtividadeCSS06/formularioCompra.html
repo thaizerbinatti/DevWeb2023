@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Acessórios - Cadastro</title>
+    <link rel="stylesheet" href="formularioCompras.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Tiger Acessórios</h1> <br>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="./compra.html">Carrinho de Compras</a></li>
+        </p>
+    </header><br>
+
+    <!-- Cadastro clientes -->
+    <section>
+        <h3>Cadastro Cliente</h3><br>
+        <form method="post" id="fContato" action="thatazerb@gmail.com">
+            <!-- Identificação -->
+            <fieldset>
+                <legend>Identificação</legend><br>
+                <label for="">Nome</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">Sobrenome</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">CPF</label>
+                <input type="number" required="required"><br><br>
+
+                <label for="">Data de Nascimento</label>
+                <input type="date" required="required"><br><br>
+            </fieldset> <br>
+
+            <!-- Dados Pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend><br>
+
+                <label for="">E-mail</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">Telefone Celular</label>
+                <input type="number" required="required"><br><br>
+
+                <label for="">Telefone Fixo</label>
+                <input type="number"><br><br>
+
+                <label for="">Profissão</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">Sexualidade</label>
+                <select name="" required="required" id="Escolaridade">
+                    <option value="">Feminino</option>
+                    <option value="">Masculino</option>
+                    <option value="">Transgênero</option>
+                    <option value="">Não-binário</option>
+                </select><br><br>
+
+                <label for="">Escolaridade</label>
+                <select name="" required="required" id="Escolaridade">
+                    <option value="">Ensino Fundamental Completo</option>
+                    <option value="">Ensino Médio Completo</option>
+                    <option value="">Ensino Técnico</option>
+                    <option value="">Ensino Superior</option>
+                    <option value="">Pós-Graduação</option>
+                </select><br><br>
+            </fieldset> <br>
+
+            <!-- Endereço -->
+            <fieldset>
+                <legend>Endereço</legend><br>
+                <label for="">País</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">Cidade</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">Estado</label>
+                <input type="text" required="required"><br><br>
+
+                <label for="">CEP</label>
+                <input type="number" required="required"><br><br>
+            </fieldset>
+        </form><br>
+
+        <!--Botão para enviar formulário-->
+        <input type="submit" value="Concluir Cadastro"><br><br>
+    </section>
+</body>
+
+</html>

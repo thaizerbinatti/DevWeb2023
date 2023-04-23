@@ -1,23 +1,33 @@
 @charset "utf-8";
 * {
- margin: 0;
- padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fcef9c;
 }
 
 header {
-    background-image: url('capatezza.jpg');
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 100vh;
-    border-top: 100px;
+    background-color: #3f1719;
+    height: 20vh;
 }
 
-#nomeuni {
-    padding: 25px;
+#nome {
+    padding: 20px 0px 10px 0px;
+    text-shadow: 1px 1px 1px #fcef9c;
+    font-size: 2.7em;
     text-align: center;
-    color: black;
+    color: #ba2339;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#subnome {
+    text-align: center;
+    color: #fcef9c;
+    text-shadow: 1px 1px 1px #ba2339;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
 }
 
 article {
@@ -25,10 +35,15 @@ article {
     padding: 25px 40px;
 }
 
+article p {
+    padding: 0cm 1cm 0cm 1cm;
+    text-align: justify;
+    font-size: 4.3mm;
+}
+
 .imagens {
-    width: 200px;
-    height: 200px;
-    margin: 0 15px 0 0;
+    width: 7in;
+    height: 1in;
 }
 
 section {
@@ -38,17 +53,45 @@ section {
 
 .titulos {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #a39288;
+    background-color: #3f1719;
+    color: #fcef9c;
     padding: 10px 10px 10px 30px;
+    font-weight: 200;
 }
 
 figure {
-    width: 320px;
-    padding: 5px;
-    border: 1px solid #000000;
-    margin: 25px;
+    border: 1px dashed #3f1719;
+    padding: 15px 260px;
+    margin: 1cm;
 }
 
 p {
     text-align: justify;
+}
+
+figcaption {
+    font-weight: 700;
+}
+
+footer
+{
+    background-color: #3f1719;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+small {
+    font-size: 0.9rem;
+    color: #fcef9c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botao {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ba2339;
+    border: 1px solid #3f1719;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
