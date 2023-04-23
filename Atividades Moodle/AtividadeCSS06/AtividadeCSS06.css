@@ -13,10 +13,10 @@
 figcaption {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 
 div {
-    background-color: #3f4b55;
+    background-color: #c3ddf3;
 }
 
