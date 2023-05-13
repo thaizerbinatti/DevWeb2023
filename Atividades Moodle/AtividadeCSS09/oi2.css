@@ -1,0 +1,67 @@
+/* Definindo o estilo do link quando o mouse passa sobre ele */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Definindo o estilo do primeiro item da lista */
+li:first-child {
+    font-weight: bold;
+}
+
+/* Definindo o estilo do último item da lista */
+li:last-child {
+    color: blue;
+}
+
+/* Definindo o estilo de um parágrafo com a classe "destaque" */
+p.destaque {
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* Definindo o estilo de um parágrafo com a classe "normal" */
+p.normal {
+    font-style: italic;
+}
+
+/* Definindo o estilo de um parágrafo com a primeira linha em negrito */
+p.primeira-linha::first-line {
+    font-weight: bold;
+}
+
+/* Definindo o estilo de um parágrafo com conteúdo antes e depois */
+p.before-after::before {
+    content: "Antes: ";
+}
+
+p.before-after::after {
+    content: " Depois";
+}
+
+/* Definindo o estilo de um parágrafo com conteúdo antes */
+p.before::before {
+    content: "Antes: ";
+}
+
+/* Definindo o estilo de um parágrafo com conteúdo depois */
+p.after::after {
+    content: " Depois";
+}
+
+/* Alinhando elementos com float */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}

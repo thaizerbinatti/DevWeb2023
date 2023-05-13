@@ -1,5 +1,19 @@
 @charset "uft-8";
 
-p:first-child {
+.cores li:first-child {
     color:blue;
+}
+.cores li:nth-child(2) {
+    color:red;
+}
+.cores li:nth-child(3) {
+    color:blue;
+}
+.cores li:last-child {
+    color:red;
+}
+
+a:hover {
+    color: palegreen;
+    text-decoration: underline;
 }
