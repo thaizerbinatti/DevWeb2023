@@ -1,0 +1,50 @@
+@charset "uft-8";
+
+/* Pseudoclasses */
+
+.cores li:first-child {
+    color: blue;
+}
+
+.cores li:nth-child(2) {
+    color: red;
+}
+
+.cores li:nth-child(3) {
+    color: blue;
+}
+
+.cores li:last-child {
+    color: red;
+}
+
+a:hover {
+    color: palegreen;
+    text-decoration: underline;
+}
+
+.focus:focus {
+    color: #d400ff;
+}
+
+/* Pseudoelementos */
+
+.text::before {
+    content: " Conheça sobre: ";
+    font-style: oblique;
+}
+
+.text::after {
+    content: " Saiba mais.. ";
+    font-style: oblique;
+}
+
+.text2::first-letter {
+    font-size: 200%;
+    color: #ff00aa;
+}
+
+.text3::selection {
+    color: #ff00aa;
+    background-color: aqua;
+}
