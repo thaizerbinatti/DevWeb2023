@@ -23,6 +23,10 @@ a:hover {
     text-decoration: underline;
 }
 
+input {
+    text-align: center;
+}
+
 .focus:focus {
     color: #d400ff;
 }
@@ -45,6 +49,24 @@ a:hover {
 }
 
 .text3::selection {
+    float: left;
     color: #ff00aa;
     background-color: aqua;
+}
+
+/* Alinhamento com float e configurações */
+
+section {
+    float: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    text-align: center;
+    background-color: #c2c2c2;
 }
