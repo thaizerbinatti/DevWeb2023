@@ -1,5 +1,5 @@
 //Quantidade de letras
-let text = ' Morango Pessego Uva Abacaxi Laranja ';
+let text = ' Morango Pêssego Uva Abacaxi Laranja ';
 console.log(text.length);
 
 //3 primeiros caracteres
@@ -11,8 +11,13 @@ let text2 = '        Uva';
 console.log(text2.trim());
 
 //Texto em caixa baixa
-const frutas = 'Morango Pessego Uva';
+const frutas = 'Morango Pêssego Uva';
 console.log(frutas.toLowerCase());
 
 //Exibir listagem de frutas
-console.log(' Lista $[Morango] ')
+let fruta1 = "Morango"
+let fruta2 = "Pêssego"
+let frutas3 = "Uva"
+let frutas4 = "Abacaxi"
+let frutas5 = "Laranja"
+console.log(`{fruta1} + {fruta2} + {fruta3} + {fruta4} + {fruta5}`)
