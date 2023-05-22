@@ -15,9 +15,6 @@ const frutas = 'Morango Pêssego Uva';
 console.log(frutas.toLowerCase());
 
 //Exibir listagem de frutas
-let fruta1 = "Morango"
-let fruta2 = "Pêssego"
-let frutas3 = "Uva"
-let frutas4 = "Abacaxi"
-let frutas5 = "Laranja"
-console.log(`{fruta1} + {fruta2} + {fruta3} + {fruta4} + {fruta5}`)
+const listafrutas = "Morango, Pessego, Uva, Abacaxi, Laranja"
+const strCopy = listafrutas.split();
+console.log(strCopy);
