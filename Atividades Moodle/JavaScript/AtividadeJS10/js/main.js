@@ -4,6 +4,7 @@ class pessoa {
         this.dataNascimento = dataNascimento; 
     }
     getIdade(idade) {
+        idade = this.dataNascimento
         return idade - getFullYear();
     }
 }
@@ -25,3 +26,4 @@ console.log(pessoas)
 pessoa.prototype.getNiver = function () {
     let dados = [this.dataNascimento(), this.dob.getMonth() + 1]
 }
+
