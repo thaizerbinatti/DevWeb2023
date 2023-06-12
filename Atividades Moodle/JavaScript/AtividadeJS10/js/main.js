@@ -1,29 +1,55 @@
-class pessoa {
-    constructor(nome, dataNascimento, getIdade) {
+class Pessoa {
+    constructor(nome, dataNascimento) {
         this.nome = nome;
-        this.dataNascimento = dataNascimento; 
+        this.dataNascimento = new Date(dataNascimento);
     }
-    getIdade(idade) {
-        idade = this.dataNascimento
-        return idade - getFullYear();
+
+    getIdade() {
+        const hoje = new Date();
+        const anoAtual = hoje.getFullYear();
+        const anoNascimento = this.dataNascimento.getFullYear();
+
+        let idade = anoAtual - anoNascimento;
+
+        return idade;
     }
 }
+
+Pessoa.prototype.getNiver = function () {
+    const hoje = new Date();
+    const mesAtual = hoje.getMonth() + 1;
+    const diaAtual = hoje.getDate();
+
+    const mesNascimento = this.dataNascimento.getMonth() + 1;
+    const diaNascimento = this.dataNascimento.getDate();
+
+    if (mesAtual > mesNascimento || (mesAtual === mesNascimento && diaAtual >= diaNascimento)) {
+        return true;
+    }
+
+    return false;
+};
 
 let pessoas = new Array(10);
-pessoas[0] = new pessoa('Patricia', '05-05-1990')
-pessoas[1] = new pessoa('Leticia', '08-11-1998')
-pessoas[2] = new pessoa('Julia', '23-09-1998')
-pessoas[3] = new pessoa('Tiago', '15-03-2000')
-pessoas[4] = new pessoa('Gustavo', '08-04-1980')
-pessoas[5] = new pessoa('Miguel', '13-07-1995')
-pessoas[6] = new pessoa('Livia', '10-05-2005')
-pessoas[7] = new pessoa('Camila', '06-06-1996')
-pessoas[8] = new pessoa('Emanoel', '05-01-2001')
-pessoas[9] = new pessoa('Erica', '03-02-2002')
-console.log(pessoas)
+pessoas[0] = new Pessoa('Patricia', '1990-05-05');
+pessoas[1] = new Pessoa('Leticia', '1998-08-11');
+pessoas[2] = new Pessoa('Julia', '1998-09-23');
+pessoas[3] = new Pessoa('Tiago', '2000-03-15');
+pessoas[4] = new Pessoa('Gustavo', '1980-04-08');
+pessoas[5] = new Pessoa('Miguel', '1995-07-13');
+pessoas[6] = new Pessoa('Livia', '2005-05-10');
+pessoas[7] = new Pessoa('Camila', '1996-06-06');
+pessoas[8] = new Pessoa('Emanoel', '2001-01-05');
+pessoas[9] = new Pessoa('Erica', '2002-02-03');
 
+pessoas.forEach(pessoa => {
+    const idade = pessoa.getIdade();
+    const fezAniversario = pessoa.getNiver();
 
-pessoa.prototype.getNiver = function () {
-    let dados = [this.dataNascimento(), this.dob.getMonth() + 1]
-}
+    if (fezAniversario) {
+        console.log(pessoa.nome + " tem " + idade + " anos e já fez aniversário esse ano.");
+    } else {
+        console.log(pessoa.nome + " tem " + idade + " anos e ainda não fez aniversário esse ano.");
+    }
+});
 
