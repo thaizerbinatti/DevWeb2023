@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>DOM - Parte 04</title>
+</head>
+
+<body>
+    <header>
+        <h1>Inscrição Cursos Online</h1>
+    </header>
+    <section class="container">
+        <form id="my-form">
+            <h1>Preencha seus dados:</h1>
+            <div class="msg"></div>
+            <div class="itens">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required />
+            </div>
+            <div class="itens">
+                <label for="dataNasc">Data de nascimento:</label>
+                <input type="date" id="dataNasc" required />
+            </div>
+            <div class="itens">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" required />
+            </div>
+            <div class="msg_email"></div>
+            <div class="itens">
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <option value="--">---</option>
+                    <option value="adm">Administração</option>
+                    <option value="cont">Contabilidade</option>
+                    <option value="econ">Economia</option>
+                    <option value="hist">História</option>
+                </select>
+            </div>
+            <input class="itens btn" type="submit" value="Incluir" />
+            <input class="itens btn2" type="submit" value="Excluir" />
+        </form>
+        <ul id="users"></ul>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

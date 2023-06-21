@@ -1,57 +1,53 @@
-// Botão 1 - Alterar backgroundColor com getElementById
-var botao1 = document.getElementById('button1')
-botao1.addEventListener("click", function () {
-    document.getElementById("titulo").style.backgroundColor = "yellow";
+// Alterando cor de fundo
+let button1 = document.querySelector(".button1");
+button1.addEventListener("click", function () {
+    let titulo = document.getElementById("titulo");
+    titulo.style.backgroundColor = "green";
 });
 
-// var botao1 = document.getElementsByClassName("button1")[0];
-// botao1.addEventListener("click", function () {
-//     document.getElementById("items").style.backgroundColor = "yellow";
-// });
+// Fonte em negrito
+let button2 = document.querySelectorAll(".button2")[0];
+button2.addEventListener("click", function () {
+    let musicas = document.getElementsByClassName("musica");
+    for (let i = 0; i < musicas.length; i++) {
+        musicas[i].style.fontWeight = "bold";
+    }
+});
 
-// // Botão 2 - Alterar fontWeight com getElementsByClassName
-// var botao2 = document.getElementsByClassName("button2")[0];
-// botao2.addEventListener("click", function () {
-//     var elementos = document.getElementsByClassName("musica");
-//     for (var i = 0; i < elementos.length; i++) {
-//         elementos[i].style.fontWeight = "bold";
-//     }
-// });
+// Efeito zebrado
+let button3 = document.querySelectorAll(".button2")[1];
+button3.addEventListener("click", function () {
+    let zebra = document.getElementsByTagName("li");
+    for (let i = 0; i < zebra.length; i++) {
+        if (i % 2 === 0) {
+            zebra[i].style.backgroundColor = "lightgray";
+        } else {
+            zebra[i].style.backgroundColor = "white";
+        }
+    }
+});
 
-// // Botão 3 - Criar efeito zebrado na lista com getElementsByTagName
-// var botao3 = document.getElementsByClassName("button2")[1];
-// botao3.addEventListener("click", function () {
-//     var itens = document.getElementsByTagName("li");
-//     for (var i = 0; i < itens.length; i++) {
-//         if (i % 2 === 0) {
-//             itens[i].style.backgroundColor = "lightgray";
-//         } else {
-//             itens[i].style.backgroundColor = "white";
-//         }
-//     }
-// });
+// Incluindo borda
+let button4 = document.querySelectorAll(".button2")[2];
+button4.addEventListener("click", function () {
+    let borda = document.getElementsByName("fitem");
+    for (let i = 0; i < borda.length; i++) {
+        borda[i].style.borderBottom = "1px solid black";
+    }
+});
 
-// // Botão 4 - Incluir borderBottom com getElementsByName
-// var botao4 = document.getElementsByClassName("button2")[2];
-// botao4.addEventListener("click", function () {
-//     var elementos = document.getElementsByName("fitem");
-//     for (var i = 0; i < elementos.length; i++) {
-//         elementos[i].style.borderBottom = "1px solid black";
-//     }
-// });
+// Removendo elemento
+let button5 = document.querySelectorAll(".button2")[3];
+button5.addEventListener("click", function () {
+    let musica3 = document.getElementById("musica3");
+    musica3.remove();
+});
 
-// // Botão 5 - Remover elemento da lista com remove
-// var botao5 = document.getElementsByClassName("button2")[3];
-// botao5.addEventListener("click", function () {
-//     var lista = document.getElementById("items");
-//     lista.removeChild(lista.lastElementChild);
-// });
-
-// // Botão 6 - Recuperar elemento da lista com insertBefore e alterar o conteúdo para "item recuperado" com textContent
-// var botao6 = document.getElementsByClassName("button2")[4];
-// botao6.addEventListener("click", function () {
-//     var lista = document.getElementById("items");
-//     var itemRecuperado = document.createElement("li");
-//     itemRecuperado.textContent = "item recuperado";
-//     lista.insertBefore(itemRecuperado, lista.firstElementChild);
-// });
+// Recuperando elemento
+let button6 = document.querySelectorAll(".button2")[4];
+button6.addEventListener("click", function () {
+    let itemRecuperado = document.createElement("li");
+    itemRecuperado.textContent = "Item recuperado";
+    let musica4 = document.getElementById("musica4");
+    musica4.parentNode.insertBefore(itemRecuperado, musica4.nextSibling);
+});
