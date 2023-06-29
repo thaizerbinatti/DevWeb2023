@@ -26,11 +26,18 @@ function App() {
         },
     ]);
 
-    // Deletar tarefa 
+    // Adicionar tarefa
+    const addTask = (task) => {
+        const id = Math.floor(Math.random() * 100000) + 1;
+        const newTask = { id, ...task };
+        setTasks([...tasks, newTask]);
+    };
+
+    // Deletar tarefa
     const deletaTarefa = (id) => {
         setTasks(tasks.filter((task) => task.id !== id));
     };
-    // Alterar o reminder 
+    // Alterar o reminder
     const mudarReminder = (id) => {
         setTasks(
             tasks.map((task) =>
@@ -39,29 +46,19 @@ function App() {
         );
         console.log(id);
     };
-    // Adicionar tarefa
-    const addTask = (task) => {
-        const id = Math.floor(Math.random() * 100000) + 1;
-        const newTask = { id, ...task };
-        setTasks([...tasks, newTask]);
-    };
 
     return (
         <div className="container">
             <Header title="tarefas" onAdd={() => setShowAddTask(!showAddTask)} />
             {showAddTask && <AddTask onAdd={addTask} />}
-            <AddTask onAdd={addTask} />
             {tasks.length > 0 ? (
-                <Tasks
-                    tasks={tasks}
-                    onDelete={deletaTarefa}
-                    onToggle={mudarReminder}
+                <Tasks tasks={tasks} onDelete={deletaTarefa} onToggle={mudarReminder}
                 />
             ) : (
                 'Você não tem tarefas, pode tirar férias!'
             )}
         </div>
-    )
+    );
 }
 
-export default App; 
+export default App;
